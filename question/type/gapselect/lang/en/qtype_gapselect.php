@@ -24,6 +24,7 @@
 
 $string['addmorechoiceblanks'] = 'Blanks for {no} more choices';
 $string['answer'] = 'Answer';
+$string['arialabelgapselect'] = 'Select one of the options using the arrow keys and enter button.';
 $string['choices'] = 'Choices';
 $string['choicex'] = 'Choice [[{no}]]';
 $string['combinedcontrolnamegapselect'] = 'drop-down menu';
