@@ -375,7 +375,16 @@ class core_question_renderer extends plugin_renderer_base {
                 'type' => 'hidden',
                 'name' => $qa->get_control_field_name('sequencecheck'),
                 'value' => $qa->get_sequence_check_count()));
+        $output .= html_writer::start_tag('fieldset');
+        $output .= html_writer::tag(
+            'legend',
+            strip_tags($qa->get_question()->questiontext),
+            array(
+                'class' => 'sr-only'
+            )
+        );
         $output .= $qtoutput->formulation_and_controls($qa, $options);
+        $output .= html_writer::end_tag('fieldset');
         if ($options->clearwrong) {
             $output .= $qtoutput->clear_wrong($qa);
         }
