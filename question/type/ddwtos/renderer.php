@@ -90,6 +90,7 @@ class qtype_ddwtos_renderer extends qtype_elements_embedded_in_question_text_ren
         } else {
             $attributes['tabindex'] = '0';
         }
+        $attributes['aria-label'] = get_string('arialabelblanknumber', 'qtype_ddwtos', $place);
 
         $feedbackimage = '';
         if ($options->correctness) {
@@ -120,6 +121,9 @@ class qtype_ddwtos_renderer extends qtype_elements_embedded_in_question_text_ren
             $boxes .= html_writer::tag('span', $content, array(
                     'class' => 'draghome choice' . $key . ' group' .
                             $choice->draggroup . $infinite)) . ' ';
+
+            $boxes .= html_writer::tag('span', ',', array(
+                    'class' => 'sr-only'));
         }
 
         return html_writer::nonempty_tag('div', $boxes,

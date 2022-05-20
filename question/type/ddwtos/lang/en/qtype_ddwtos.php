@@ -24,6 +24,7 @@
 
 $string['addmorechoiceblanks'] = 'Blanks for {no} more choices';
 $string['answer'] = 'Answer';
+$string['arialabelblanknumber'] = 'Blank number {$a}. Use up and down arrows to select a word to fill the blank.';
 $string['blank'] = 'blank';
 $string['correctansweris'] = 'The correct answer is: {$a}';
 $string['errorlimitedchoice'] = 'Choice [[{$a}]] has been used more than once without being set to "Unlimited". Please recheck this question.';
