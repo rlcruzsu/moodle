@@ -28,6 +28,7 @@ $string['acceptedfiletypes_help'] = 'Accepted file types can be restricted by en
 $string['allowattachments'] = 'Allow attachments';
 $string['answerfiles'] = 'Answer files';
 $string['answertext'] = 'Answer text';
+$string['arialabeltypeanswer'] = 'Type your answer here.';
 $string['attachedfiles'] = 'Attachments: {$a}';
 $string['attachmentsoptional'] = 'Attachments are optional';
 $string['attachmentsrequired'] = 'Require attachments';

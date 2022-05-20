@@ -522,6 +522,7 @@ class qtype_essay_format_plain_renderer extends plugin_renderer_base {
         $attributes['class'] = $this->class_name() . ' qtype_essay_response form-control';
         $attributes['rows'] = $lines;
         $attributes['cols'] = 60;
+        $attributes['aria-label'] = get_string('arialabeltypeanswer', 'qtype_essay');
         return html_writer::tag('textarea', s($response), $attributes);
     }
 
