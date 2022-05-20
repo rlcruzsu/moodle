@@ -59,6 +59,7 @@ define(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
         // from both the monitor and the screen-reader, it is still tabbable.
         clearChoiceContainer.addClass('sr-only');
         clearChoiceContainer.attr('aria-hidden', true);
+        clearChoiceContainer.find(SELECTORS.RADIO).attr('aria-hidden', true);
         clearChoiceContainer.find(SELECTORS.LINK).attr('tabindex', -1);
     };
 
@@ -70,6 +71,7 @@ define(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
     var showClearChoiceOption = function(clearChoiceContainer) {
         clearChoiceContainer.removeClass('sr-only');
         clearChoiceContainer.removeAttr('aria-hidden');
+        clearChoiceContainer.find(SELECTORS.RADIO).removeAttr('aria-hidden');
         clearChoiceContainer.find(SELECTORS.LINK).attr('tabindex', 0);
         clearChoiceContainer.find(SELECTORS.RADIO).prop('disabled', true);
     };
